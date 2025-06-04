@@ -13,10 +13,12 @@
       background: #f6f6f6;
       color: #333;
       line-height: 1.8;
+      overflow-x: hidden; /* 防止横向滚动 */
     }
 
     .container {
-      max-width: 1200px;
+      width: 100%;
+      max-width: 1200px; /* 最大宽度为1200px */
       margin: 0 auto;
       padding: 80px 20px;
     }
@@ -195,6 +197,49 @@
       margin-top: 80px;
     }
 
+    /* 修正手机尺寸 */
+    @media (max-width: 768px) {
+      body {
+        overflow-x: auto; /* 允许在手机上横向滚动 */
+      }
+      
+      .container {
+        width: 100%; /* 全宽 */
+        padding: 40px 20px; /* 减少 padding */
+      }
+
+      h1 {
+        font-size: 2.6em;
+      }
+
+      h2 {
+        font-size: 2.2em;
+      }
+
+      h3 {
+        font-size: 1.6em;
+      }
+
+      .section {
+        display: block; /* 设置为单列模式 */
+        width: 100%;
+      }
+
+      .section img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .section-content {
+        width: 100%;
+        padding-left: 0;
+      }
+
+      .cta-btn {
+        width: auto;
+        padding: 12px 30px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -207,7 +252,7 @@
       <div class="section-content">
         <h2>圈层定位</h2>
         <ul>
-           <li>仅限邀请制，尊重个体隐私与社交选择。</li>
+          <li>仅限邀请制，尊重个体隐私与社交选择。</li>
           <li>汇聚企业家、投资人、艺术 patron 与文化倡导者。</li>
           <li>倡导行动力与结果导向，鼓励资源共享、跨界协作。</li>
         </ul>
