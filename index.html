@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>私享圈层 · 上海明士公益·善商同盟汇</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Serif SC', serif;
+      background: #f6f6f6;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+      color: #222;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 3.6em;
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 2.6em;
+      color: #222;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 1.8em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #555;
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.8;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #000;
+    }
+
+    /* 动画效果 */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* 区域容器 */
+    .section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 80px;
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards;
+      padding-bottom: 40px;
+    }
+
+    .section img {
+      width: 50%;
+      height: auto;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section img:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .section-content {
+      width: 45%;
+      padding-left: 40px;
+    }
+
+    .section-content h2 {
+      font-size: 2.5em;
+      color: #222;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+
+    .section-content ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+
+    .section-content ul li {
+      margin-bottom: 25px;
+      line-height: 1.8;
+      opacity: 0;
+      animation: slideIn 1s ease-out forwards;
+    }
+
+    .section:nth-child(odd) .section-content ul li {
+      animation-delay: 0.3s;
+    }
+
+    .section:nth-child(even) .section-content ul li {
+      animation-delay: 0.6s;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      padding: 18px 50px;
+      background-color: #000;
+      color: #fff;
+      font-size: 1.3em;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 30px;
+      transition: background-color 0.3s, transform 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: #333;
+      transform: scale(1.05);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 16px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+      font-size: 1.2em;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #000;
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 150px;
+    }
+
+    #success-message {
+      display: none;
+      text-align: center;
+      color: #28a745;
+      font-size: 1.1em;
+      margin-top: 20px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #999;
+      padding: 20px 0;
+      margin-top: 80px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>上海明士公益·善商同盟汇</h1>
+    <p class="highlight">链接资源｜赋能商业｜引领品位</p>
+
+    <div class="section">
+      <div class="section-content">
+        <h2>圈层定位</h2>
+        <ul>
+           <li>仅限邀请制，尊重个体隐私与社交选择。</li>
+          <li>汇聚企业家、投资人、艺术 patron 与文化倡导者。</li>
+          <li>倡导行动力与结果导向，鼓励资源共享、跨界协作。</li>
+        </ul>
+      </div>
+      <img src="https://gd-hbimg.huaban.com/9f8546efc1f26267370abf16c7c19ec59dbc3db613c5f7-LYIQvA_fw1200" alt="圈层定位">
+    </div>
+
+    <div class="section">
+      <img src="https://gd-hbimg.huaban.com/79af35989aed38988557a87ad54a0284e7d699e8e0a1-n4A9Av_fw1200" alt="商业活动亮点">
+      <div class="section-content">
+        <h2>商业活动</h2>
+        <ul>
+          <li>私董会：闭门剖析实务议题。</li>
+          <li>投资沙龙：优质项目展示与资本方对接。</li>
+          <li>品味沙龙：沉浸式文化体验，升华生活美学。</li>
+          <li>定制行旅：高品质城市访学与企业互访。</li>
+          <li>合作晚宴：限定席位邀请制晚宴推进资源整合。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-content">
+        <h2>不仅是商业空间</h2>
+        <p>上海明士公益·善商同盟汇 不仅是公益与艺术的平台，它更是思想交汇、资源融合的场所。我们致力于构建具有“文化温度”与“资本触感”的私享生态系统。</p>
+        <a href="#contact" class="cta-btn">申请加入私享圈层</a>
+      </div>
+      <img src="https://gd-hbimg.huaban.com/43703e15fea58c283f16822d7b0b96f16b039f5314ccbe-OFpSeH_fw1200" alt="艺术空间">
+    </div>
+
+    <h3>加入申请表单</h3>
+    <form id="contact" onsubmit="handleSubmit(event)">
+      <label for="name">姓名</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">联系电话</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <button type="submit" class="cta-btn">提交申请</button>
+    </form>
+
+    <p id="success-message">提交成功！感谢您的申请，我们将尽快与您联系。</p>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 上海明士公益·善商同盟汇 ｜ 私享圈层</p>
+  </div>
+
+  <script>
+    async function handleSubmit(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const phonePattern = /^1[3-9]\d{9}$/;
+
+      if (!name || !phone) {
+        alert('请完整填写所有信息。');
+        return;
+      }
+
+      if (!phonePattern.test(phone)) {
+        alert('请输入有效的手机号。');
+        return;
+      }
+
+      const airtableUrl = 'https://api.airtable.com/v0/appaoXtJvrIJWZqvH/Table%201';
+      const token = 'patFgZbRGdKlxcyRW.816634772bec8f8cd94fe2ee15023135a78417e0b8f659563ee5d2257a29a48b'; // 使用真实的token
+
+      const payload = {
+        records: [
+          {
+            fields: {
+              "Name": name,
+              "手机号": phone
+            }
+          }
+        ]
+      };
+
+      try {
+        const res = await fetch(airtableUrl, {
+          method: 'POST',
+          headers: {
+            'Authorization': 'Bearer ' + token,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        if (res.ok) {
+          document.getElementById('success-message').style.display = 'block';
+        } else {
+          const error = await res.json();
+          alert('❌ 提交失败: ' + (error.error?.message || '未知错误'));
+        }
+      } catch (err) {
+        alert('❌ 网络错误，请稍后再试');
+      }
+
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>
